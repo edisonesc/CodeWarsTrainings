@@ -20,24 +20,11 @@ public class Isogram {
          Map<Character, Integer> map = new HashMap<Character, Integer>();
          for(Character ch : charArray){
              if(map.containsKey(ch)){
-                 map.put(ch, map.get(ch) + 1);
-             
-             }
-             else{
-                 map.put(ch, 1);
-             }
-           
-         }
+                 map.put(ch, map.get(ch) + 1);}
+             else{map.put(ch, 1);}}
          Set<Character> keys = map.keySet();
          for(Character ch : keys){
-             if(map.get(ch) > 1){
-             
-                 return false;
-                 
-             }
-             
-         }
-         
+             if(map.get(ch) > 1){ return false;}}
          return true;
          
        
