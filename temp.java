@@ -18,7 +18,7 @@ public class temp {
     
     
     public static void dups(String text){
-    char[] charArray = text.toCharArray();
+    char[] charArray = text.toLowerCase().toCharArray();
     Map<Character, Integer> map = new HashMap<Character, Integer>();
     for(Character ch : charArray){
             if(map.containsKey(ch)){
